@@ -19,11 +19,11 @@ podTemplate(
     // settings for our Nexus installation
     def mvnCmd = "mvn -s ../nexus_settings.xml -B"
     // project prefix
-    def guid      = "7668"
+    def guid      = "${GUID}"
     // git repository
-    def repo      = "https://github.com/sjutz/advdev_homework.git"
+    def repo      = "${REPO}"
     // cluster URL
-    def cluster   = "na311.openshift.opentlc.com"
+    def cluster   = "${CLUSTER}"
     // sonar URL
     def sonar     = "http://sonarqube.gpte-hw-cicd.svc.cluster.local:9000"
 
